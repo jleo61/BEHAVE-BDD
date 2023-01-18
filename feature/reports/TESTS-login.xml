@@ -1,0 +1,87 @@
+<testsuite name="login.Login valid" tests="4" errors="2" failures="0" skipped="0" time="83.779624" timestamp="2022-12-11T14:19:08.900696" hostname="JayLeo15"><testcase classname="login.Login valid" name="Valid login" status="passed" time="17.528648"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Valid login
+    Given launch chrome ... passed in 1.358s
+    When open urll ... passed in 2.819s
+    And Enter "Admin" n "admin123" ... passed in 4.172s
+    And Login button ... passed in 9.155s
+    Then verify login ... passed in 0.024s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+pass
+
+]]>
+</system-out></testcase><testcase classname="login.Login valid" name="Valid login -- @1.1 " status="passed" time="16.154023"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Valid login -- @1.1 
+    Given launch chrome ... passed in 1.302s
+    When open urll ... passed in 2.580s
+    And Enter "admin" n "admin123" ... passed in 4.153s
+    And Login button ... passed in 8.091s
+    Then verify login ... passed in 0.028s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+pass
+
+]]>
+</system-out></testcase><testcase classname="login.Login valid" name="Valid login -- @1.2 " status="failed" time="33.617713"><error type="UnboundLocalError" message="local variable 'dashboard' referenced before assignment">
+<![CDATA[
+Failing step: Then verify login ... failed in 16.230s
+Location: login.feature:18
+Traceback (most recent call last):
+  File "c:\users\matne.laptop-t1pulm73\onedrive\desktop\beehave\venv\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "c:\users\matne.laptop-t1pulm73\onedrive\desktop\beehave\venv\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "steps\login.py", line 45, in step_impl
+    if dashboard == "Dashboard":
+UnboundLocalError: local variable 'dashboard' referenced before assignment
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Valid login -- @1.2 
+    Given launch chrome ... passed in 1.152s
+    When open urll ... passed in 4.004s
+    And Enter "admin123" n "admin" ... passed in 4.162s
+    And Login button ... passed in 8.071s
+    Then verify login ... failed in 16.230s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="login.Login valid" name="Valid login -- @1.3 " status="failed" time="16.47924"><error type="UnboundLocalError" message="local variable 'dashboard' referenced before assignment">
+<![CDATA[
+Failing step: Then verify login ... failed in 0.117s
+Location: login.feature:18
+Traceback (most recent call last):
+  File "c:\users\matne.laptop-t1pulm73\onedrive\desktop\beehave\venv\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "c:\users\matne.laptop-t1pulm73\onedrive\desktop\beehave\venv\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "steps\login.py", line 45, in step_impl
+    if dashboard == "Dashboard":
+UnboundLocalError: local variable 'dashboard' referenced before assignment
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Valid login -- @1.3 
+    Given launch chrome ... passed in 1.306s
+    When open urll ... passed in 2.793s
+    And Enter "adminxyz" n "admin123" ... passed in 4.201s
+    And Login button ... passed in 8.062s
+    Then verify login ... failed in 0.117s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

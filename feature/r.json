@@ -1,0 +1,100 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "login.feature:4",
+      "name": "Valid login",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "login.feature:5",
+          "match": {
+            "arguments": [],
+            "location": "steps/login.py:7"
+          },
+          "name": "launch chrome",
+          "result": {
+            "duration": 1.5869383811950684,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "login.feature:6",
+          "match": {
+            "arguments": [],
+            "location": "steps/login.py:13"
+          },
+          "name": "open urll",
+          "result": {
+            "duration": 3.376861333847046,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "login.feature:7",
+          "match": {
+            "arguments": [
+              {
+                "name": "userName",
+                "value": "Admin"
+              },
+              {
+                "name": "Password",
+                "value": "admin123"
+              }
+            ],
+            "location": "steps/login.py:19"
+          },
+          "name": "Enter \"Admin\" n \"admin123\"",
+          "result": {
+            "duration": 4.164639949798584,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "login.feature:8",
+          "match": {
+            "arguments": [],
+            "location": "steps/login.py:28"
+          },
+          "name": "Login button",
+          "result": {
+            "duration": 8.104712009429932,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "login.feature:10",
+          "match": {
+            "arguments": [],
+            "location": "steps/login.py:36"
+          },
+          "name": "verify login",
+          "result": {
+            "duration": 0.02286815643310547,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "login.feature:3",
+  "name": "Login valid",
+  "status": "passed",
+  "tags": []
+}
+]
